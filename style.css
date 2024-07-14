@@ -1,0 +1,92 @@
+body {
+font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    color: white;
+  }
+
+
+.container {
+  text-align: center;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(254, 253, 253, 0.877);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background: green;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #e9ecef;
+}
+
+#restartBtn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+#restartBtn:hover {
+  background: #0056b3;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.mode-selection {
+  margin-bottom: 20px;
+}
+
+.mode-selection button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#playerVsPlayerBtn {
+  background: blue;
+  color: white;
+}
+
+#playerVsAiBtn {
+  background: rgb(177, 64, 64);
+  color: #fff;
+}
+
+.mode-selection button:hover {
+  opacity: 0.9;
+}
